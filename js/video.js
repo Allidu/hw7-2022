@@ -1,5 +1,4 @@
 var video;
-var vol;
 
 var slider = document.getElementById("slider");
 var output = document.getElementById("volume");
@@ -8,6 +7,7 @@ var mute = document.getElementById("mute");
 
 slider.oninput = function() {
   output.innerHTML = this.value+'%';
+  video.volume = (slider.value)/100;
 }
 
 
