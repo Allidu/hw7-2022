@@ -26,6 +26,7 @@ document.querySelector("#play").addEventListener("click", function() {
 	video.play();
 	//update volume info
 	video.volume = (slider.value)/100;
+	output.innerHTML = video.volume*100+'%';
 	console.log(video.volume);
  });
 
