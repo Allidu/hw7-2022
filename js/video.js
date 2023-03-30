@@ -4,10 +4,10 @@ var vol;
 var slider = document.getElementById("slider");
 var output = document.getElementById("volume");
 var mute = document.getElementById("mute");
-output.innerHTML = slider.value;
+
 
 slider.oninput = function() {
-  output.innerHTML = this.value;
+  output.innerHTML = this.value+'%';
 }
 
 
